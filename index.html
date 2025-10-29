@@ -292,6 +292,19 @@
             background: #059669;
         }
 
+        .cta-button i {
+            margin-right: 10px;
+            font-size: 1.4rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        .cta-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+
         .urgency-tag {
             display: inline-block;
             background: rgba(255, 255, 255, 0.25);
@@ -1157,20 +1170,20 @@
                 </div>
                 <div class="schedule-grid">
                     <div class="schedule-item">
-                        <div class="schedule-date">11 Nov</div>
-                        <div class="schedule-day">Lunes</div>
+                        <div class="schedule-date">12 Nov</div>
+                        <div class="schedule-day">Martes</div>
                     </div>
                     <div class="schedule-item">
-                        <div class="schedule-date">18 Nov</div>
-                        <div class="schedule-day">Lunes</div>
+                        <div class="schedule-date">19 Nov</div>
+                        <div class="schedule-day">Martes</div>
                     </div>
                     <div class="schedule-item">
-                        <div class="schedule-date">25 Nov</div>
-                        <div class="schedule-day">Lunes</div>
+                        <div class="schedule-date">26 Nov</div>
+                        <div class="schedule-day">Martes</div>
                     </div>
                     <div class="schedule-item">
-                        <div class="schedule-date">02 Dic</div>
-                        <div class="schedule-day">Lunes</div>
+                        <div class="schedule-date">03 Dic</div>
+                        <div class="schedule-day">Martes</div>
                     </div>
                 </div>
                 <div class="schedule-details">
@@ -1200,12 +1213,12 @@
 
             <div class="start-date" data-aos="fade-up" data-aos-delay="700">
                 <i class="far fa-calendar-alt"></i>
-                <span>Comienza el 11 de Noviembre de 2024</span>
+                <span>Comienza el 12 de Noviembre de 2024</span>
             </div>
 
-            <button class="cta-button" onclick="openModal()" data-aos="fade-up" data-aos-delay="800">
-                Inscríbete Ahora
-            </button>
+            <a href="https://wa.me/56977081565?text=¡Hola! Me interesa inscribirme en el Taller de IA para Todos. Me gustaría recibir más información sobre las fechas y el proceso de inscripción." class="cta-button" target="_blank" data-aos="fade-up" data-aos-delay="800">
+                <i class="fab fa-whatsapp"></i> Inscríbete por WhatsApp
+            </a>
         </div>
     </section>
 
@@ -1310,7 +1323,7 @@
 
         // Countdown Timer
         function updateCountdown() {
-            const targetDate = new Date('2025-11-02T00:00:00').getTime();
+            const targetDate = new Date('2025-11-12T18:30:00').getTime();
             const now = new Date().getTime();
             const distance = targetDate - now;
 
