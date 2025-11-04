@@ -10,7 +10,7 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://kaysersozes.github.io/talleria/">
     <meta property="og:title" content="IA para Todos - Taller de Inteligencia Artificial">
-    <meta property="og:description" content="🚀 Transforma tu carrera con IA en 4 semanas. Martes 12, 19, 26 Nov y 3 Dic. 18:30-20:00 hrs. 100% Online. Con Pablo Pérez de Tudela y Renzo Vergara. ¡Solo $19.900!">
+    <meta property="og:description" content="� PRE-INSCRIPCIÓN ABIERTA: Transforma tu carrera con IA en 4 sesiones. Fechas flexibles coordinadas con el grupo. 100% Online con Pablo Pérez de Tudela y Renzo Vergara. ¡Solo $19.900! Asegura tu cupo."
     <meta property="og:image" content="https://kaysersozes.github.io/talleria/og-image.jpg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
@@ -20,7 +20,7 @@
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://kaysersozes.github.io/talleria/">
     <meta property="twitter:title" content="IA para Todos - Taller de Inteligencia Artificial">
-    <meta property="twitter:description" content="🚀 Transforma tu carrera con IA en 4 semanas. Martes 12, 19, 26 Nov y 3 Dic. 18:30-20:00 hrs. 100% Online. Con Pablo Pérez de Tudela y Renzo Vergara. ¡Solo $19.900!">
+    <meta property="twitter:description" content="� PRE-INSCRIPCIÓN ABIERTA: Transforma tu carrera con IA en 4 sesiones. Fechas flexibles coordinadas con el grupo. 100% Online con Pablo Pérez de Tudela y Renzo Vergara. ¡Solo $19.900! Asegura tu cupo."
     <meta property="twitter:image" content="https://kaysersozes.github.io/talleria/og-image.jpg">
 
     <!-- WhatsApp específico -->
@@ -261,6 +261,181 @@
             font-weight: 500;
         }
 
+        /* Personal Message Section */
+        .personal-message {
+            background: var(--light);
+            padding: 80px 20px;
+        }
+
+        .hero .message-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 25px;
+            padding: 40px 35px;
+            max-width: 700px;
+            margin: 30px auto;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            position: relative;
+            overflow: hidden;
+            z-index: 2;
+        }
+
+        .hero .message-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+        }
+
+        .hero .message-greeting {
+            font-size: 1.6rem;
+            margin-bottom: 20px;
+            color: var(--dark);
+            font-weight: 600;
+        }
+
+        .message-intro {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: var(--gray);
+            margin-bottom: 25px;
+        }
+
+        .message-description {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: var(--gray);
+            margin-bottom: 30px;
+        }
+
+        .message-benefits {
+            background: var(--light);
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 30px;
+        }
+
+        .message-benefits h4 {
+            color: var(--primary-color);
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .benefit-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px;
+            font-size: 1.05rem;
+            color: var(--dark);
+            line-height: 1.5;
+            gap: 8px;
+        }
+
+        .benefit-item::before {
+            content: '✅';
+            font-size: 1.1rem;
+            flex-shrink: 0;
+            width: 20px;
+            display: inline-block;
+        }
+
+        .benefit-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .message-cta {
+            background: linear-gradient(135deg, var(--accent-color), #059669);
+            color: white;
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        /* Integrated Price and Schedule Info */
+        .integrated-price {
+            background: rgba(255, 255, 255, 0.9);
+            border: 2px solid var(--primary-color);
+            border-radius: 20px;
+            padding: 25px;
+            margin: 25px 0;
+            text-align: center;
+        }
+
+        .integrated-price-label {
+            font-size: 1rem;
+            color: var(--gray);
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+
+        .integrated-price-value {
+            font-family: 'Poppins', sans-serif;
+            font-size: 2.2rem;
+            font-weight: 800;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+
+        .integrated-schedule {
+            background: rgba(255, 255, 255, 0.9);
+            border: 2px solid var(--accent-color);
+            border-radius: 20px;
+            padding: 25px;
+            margin: 25px 0;
+        }
+
+        .integrated-schedule-title {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+
+        .integrated-schedule-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 12px;
+            font-size: 1.05rem;
+            color: var(--dark);
+        }
+
+        .integrated-schedule-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .integrated-schedule-icon {
+            font-size: 1.1rem;
+            width: 20px;
+            flex-shrink: 0;
+        }
+
+        .calendar-icon { color: #ff6b35; }
+        .clock-icon { color: var(--gray); }
+        .phone-icon { color: #007bff; }
+        .check-icon { color: var(--accent-color); }
+
+        .instructors-signature {
+            text-align: center;
+            margin-top: 25px;
+            font-style: italic;
+            color: var(--gray);
+            font-size: 1rem;
+        }
+
         .start-date {
             font-size: 1.3rem;
             margin: 25px 0;
@@ -324,6 +499,13 @@
             display: inline-flex;
             align-items: center;
             justify-content: center;
+        }
+
+        .hero .message-card .cta-button {
+            width: 100%;
+            margin: 25px 0 20px 0;
+            position: relative;
+            z-index: 2;
         }
 
         .urgency-tag {
@@ -1125,6 +1307,61 @@
                 font-size: 1rem;
             }
 
+            .hero .message-card {
+                padding: 25px 20px;
+                margin: 20px 15px;
+            }
+
+            .hero .message-greeting {
+                font-size: 1.4rem;
+            }
+
+            .message-intro,
+            .message-description {
+                font-size: 1rem;
+            }
+
+            .message-benefits {
+                padding: 20px;
+            }
+
+            .benefit-item {
+                font-size: 1rem;
+                margin-bottom: 10px;
+            }
+
+            .benefit-item::before {
+                font-size: 1rem;
+                width: 18px;
+            }
+
+            .integrated-price {
+                padding: 20px;
+                margin: 20px 0;
+            }
+
+            .integrated-price-value {
+                font-size: 1.8rem;
+            }
+
+            .integrated-schedule {
+                padding: 20px;
+                margin: 20px 0;
+            }
+
+            .integrated-schedule-title {
+                font-size: 1.1rem;
+            }
+
+            .integrated-schedule-item {
+                font-size: 1rem;
+            }
+
+            .hero .message-card .cta-button {
+                padding: 15px 40px;
+                font-size: 1.1rem;
+            }
+
             .stat-number {
                 font-size: 2.8rem;
             }
@@ -1174,76 +1411,61 @@
             <h1 data-aos="fade-down" data-aos-duration="1000">IA para Todos: Aprende a Dominar las Herramientas del Futuro</h1>
             <p class="subtitle" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">Transforma tu carrera con el poder de la Inteligencia Artificial en solo 4 semanas. Sin conocimientos técnicos previos.</p>
 
-            <div class="tutors-info" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
-                <div class="tutors-title">Instructores</div>
-                <div class="tutors-names">Pablo Pérez de Tudela & Renzo Vergara Gonzales</div>
-            </div>
-
-            <div class="price-badge" data-aos="zoom-in" data-aos-delay="400" data-aos-duration="1000">
-                <small>Precio especial</small>
-                $19.900
-            </div>
-
-            <div class="schedule-info" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
-                <div class="schedule-title">
-                    <i class="fas fa-calendar-check"></i>
-                    Fechas y Horarios
+            <!-- Mensaje Personal Integrado -->
+            <div class="message-card" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+                <div class="message-greeting">Hola 👋🏼</div>
+                
+                <div class="message-intro">
+                    Somos <strong>Pablo y Renzo</strong>, y acompañamos a personas que están empezando o quieren sacarle más jugo a la IA como herramienta diaria.
                 </div>
-                <div class="schedule-grid">
-                    <div class="schedule-item">
-                        <div class="schedule-date">12 Nov</div>
-                        <div class="schedule-day">Martes</div>
+                
+                <div class="message-description">
+                    Creamos un curso en <strong>4 talleres prácticos</strong> para que entiendas qué es realmente la IA, qué está pasando con este boom que está cambiando el mundo 🌍 y cómo usarla a tu favor.
+                </div>
+
+                <div class="message-benefits">
+                    <h4>Al terminar:</h4>
+                    <div class="benefit-item">Sabrás qué modelo elegir</div>
+                    <div class="benefit-item">Si vale la pena pagar o no</div>
+                    <div class="benefit-item">Cómo aplicarla en tu día a día (trabajo, vida personal, lo que necesites)</div>
+                </div>
+
+                <!-- Precio integrado -->
+                <div class="integrated-price">
+                    <div class="integrated-price-label">Precio especial</div>
+                    <div class="integrated-price-value">$19.900</div>
+                </div>
+
+                <!-- Información de Pre-inscripción -->
+                <div class="integrated-schedule">
+                    <div class="integrated-schedule-title">
+                        <i class="fas fa-users"></i>
+                        Pre-inscripción Abierta
                     </div>
-                    <div class="schedule-item">
-                        <div class="schedule-date">19 Nov</div>
-                        <div class="schedule-day">Martes</div>
+                    <div class="integrated-schedule-item">
+                        <span class="integrated-schedule-icon calendar-icon">📅</span>
+                        <span>Las fechas se coordinan con los participantes</span>
                     </div>
-                    <div class="schedule-item">
-                        <div class="schedule-date">26 Nov</div>
-                        <div class="schedule-day">Martes</div>
+                    <div class="integrated-schedule-item">
+                        <span class="integrated-schedule-icon clock-icon">🕐</span>
+                        <span>4 sesiones de 1.5 hrs • 📱 100% Online</span>
                     </div>
-                    <div class="schedule-item">
-                        <div class="schedule-date">03 Dic</div>
-                        <div class="schedule-day">Martes</div>
+                    <div class="integrated-schedule-item">
+                        <span class="integrated-schedule-icon check-icon">✅</span>
+                        <span>Horarios flexibles según disponibilidad del grupo</span>
                     </div>
                 </div>
-                <div class="schedule-details">
-                    <div class="schedule-time">18:30 - 20:00 hrs</div>
-                    <div class="schedule-mode">📱 Modalidad 100% Online</div>
+
+                <a href="https://wa.me/56977081565?text=¡Hola! Me interesa hacer la PRE-INSCRIPCIÓN al Taller de IA para Todos. Quiero asegurar mi cupo y coordinar las fechas con el grupo. ¿Me puedes dar más información?" class="cta-button" target="_blank" style="margin-top: 25px;">
+                    <i class="fab fa-whatsapp"></i> Pre-inscríbete por WhatsApp
+                </a>
+
+                <div class="instructors-signature">
+                    — Pablo Pérez de Tudela & Renzo Vergara Gonzales
                 </div>
             </div>
-
-            <div class="countdown-container" data-aos="fade-up" data-aos-delay="600">
-                <div class="countdown-item">
-                    <span class="countdown-value" id="days">00</span>
-                    <span class="countdown-label">Días</span>
-                </div>
-                <div class="countdown-item">
-                    <span class="countdown-value" id="hours">00</span>
-                    <span class="countdown-label">Horas</span>
-                </div>
-                <div class="countdown-item">
-                    <span class="countdown-value" id="minutes">00</span>
-                    <span class="countdown-label">Minutos</span>
-                </div>
-                <div class="countdown-item">
-                    <span class="countdown-value" id="seconds">00</span>
-                    <span class="countdown-label">Segundos</span>
-                </div>
-            </div>
-
-            <div class="start-date" data-aos="fade-up" data-aos-delay="700">
-                <i class="far fa-calendar-alt"></i>
-                <span>Comienza el 12 de Noviembre de 2024</span>
-            </div>
-
-            <a href="https://wa.me/56977081565?text=¡Hola! Me interesa inscribirme en el Taller de IA para Todos. Me gustaría recibir más información sobre las fechas y el proceso de inscripción." class="cta-button" target="_blank" data-aos="fade-up" data-aos-delay="800">
-                <i class="fab fa-whatsapp"></i> Inscríbete por WhatsApp
-            </a>
         </div>
     </section>
-
-
 
     <!-- Particles.js -->
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>

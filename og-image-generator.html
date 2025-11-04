@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>IA para Todos — Social Preview (1200x630)</title>
+  <meta name="viewport" content="width=1200, height=630" />
+  <style>
+    /* Export-ready canvas: exact pixels */
+    html,body{height:100%;margin:0}
+    .canvas{
+      width:1200px;
+      height:630px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+      /* main gradient background */
+      background: linear-gradient(135deg,#6366f1 0%,#8b5cf6 100%);
+      position:relative;
+      color:#fff;
+      overflow:hidden;
+    }
+
+    /* subtle tech pattern using SVG data URI */
+    .canvas::before{
+      content:"";
+      position:absolute;inset:0;opacity:0.12;pointer-events:none;
+      background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60"><g fill="none" stroke="rgba(255,255,255,0.07)" stroke-width="1"><rect x="0.5" y="0.5" width="59" height="59" rx="6"/></g><g stroke="rgba(255,255,255,0.03)" stroke-width="1"><path d="M30 0v60M0 30h60"/></g></svg>');
+      background-repeat: repeat;
+      transform:scale(1.2);
+      mix-blend-mode: overlay;
+      filter: blur(0.2px);
+    }
+
+    .card{
+      position:relative;
+      width:1060px;
+      max-width:1060px;
+      padding:48px 56px;
+      box-sizing:border-box;
+      display:flex;
+      gap:32px;
+      align-items:center;
+      justify-content:space-between;
+      background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02));
+      border-radius:20px;
+      box-shadow: 0 10px 30px rgba(9,10,31,0.25);
+      backdrop-filter: blur(4px);
+    }
+
+    .left{
+      flex:1 1 60%;
+      display:flex;
+      flex-direction:column;
+      gap:12px;
+    }
+    .title{
+      font-weight:800;
+      letter-spacing: -1px;
+      font-size:64px;
+      margin:0;line-height:0.95;
+    }
+    .subtitle{
+      margin:0;font-weight:600;font-size:22px;opacity:0.95;
+    }
+
+    .meta{
+      display:flex;flex-wrap:wrap;gap:12px;margin-top:18px;font-size:18px;align-items:center;
+    }
+    .chip{
+      background: rgba(255,255,255,0.06);
+      padding:10px 14px;border-radius:12px;font-weight:600;
+      display:inline-flex;align-items:center;gap:8px;
+    }
+
+    .right{
+      flex:0 0 320px;display:flex;flex-direction:column;align-items:flex-end;gap:12px;
+    }
+
+    .price{
+      font-size:28px;font-weight:800;color:#10b981;background:rgba(255,255,255,0.03);padding:10px 18px;border-radius:10px;
+    }
+
+    .instructors{
+      font-size:14px;opacity:0.95;background:rgba(255,255,255,0.03);padding:8px 12px;border-radius:8px;font-weight:600;
+    }
+
+    /* small footer note */
+    .footer-note{position:absolute;left:56px;bottom:28px;font-size:13px;opacity:0.9}
+
+    /* Responsive-ish for scaling inside previewers */
+    @media (max-width:1200px){
+      .canvas{transform:scale(calc(100vw / 1200));transform-origin:top left}
+    }
+
+  </style>
+</head>
+<body>
+  <div class="canvas">
+    <div class="card" role="img" aria-label="IA para Todos — social preview">
+      <div class="left">
+        <h1 class="title">IA para Todos</h1>
+        <div class="subtitle">Domina las Herramientas del Futuro</div>
+
+        <div class="meta" aria-hidden="false">
+          <div class="chip">🗓️ Martes: 12, 19, 26 Nov y 3 Dic</div>
+          <div class="chip">⏰ 18:30-20:00 hrs • 🌐 100% Online</div>
+          <div class="chip">4 sesiones • 1h30 cada una</div>
+        </div>
+
+      </div>
+
+      <div class="right">
+        <div class="price">$19.900</div>
+        <div class="instructors">Pablo Pérez de Tudela &amp; Renzo Vergara Gonzales</div>
+        <div style="font-size:13px;opacity:0.88;margin-top:8px;color:rgba(255,255,255,0.95);">Cupo limitado</div>
+      </div>
+
+      <div class="footer-note">Inscripciones: WhatsApp +56 9 7708 1565</div>
+    </div>
+  </div>
+</body>
+</html>
